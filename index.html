@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Abhay</title>
+</head>
+<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  /> 
+  <link rel="stylesheet" href="./css/aos.css" />
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<style type="text/css">
+	*{
+	 margin: 0;
+	 padding: 0;
+	 box-sizing: border-box;
+	 
+
+	}
+	header{
+		background-size: cover;
+		background-color: #00DBDE;
+background-image: linear-gradient(197deg, #00DBDE 0%, #FC00FF 100%);
+	} 
+ 
+	.rain{
+
+		background-image: url('cp.png');
+		height: 100vh;
+
+	}
+	nav{
+		height: 10vh;
+		width: 100%;
+		background:rgba(0,0,0,0.3);
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		text-transform: uppercase;
+		color: white;
+		
+		border-radius:20px 20px 30px 30px ;
+	}
+	
+
+	.heart{
+		width: 30%;
+		text-align: center;
+		color: #25a7ce;
+		text-shadow: 0px 1px red;
+		letter-spacing: 2px;
+		white-space: nowrap;
+		animation: beat .25s infinite alternate;
+		 transform-origin: center;
+
+
+	}
+	
+	@keyframes beat{
+	 to { transform: scale(1.4); }
+}
+	.topic{
+		width: 40%;
+		text-align: center;
+		text-decoration: none;
+		color:white;
+		display: flex;
+		justify-content: space-between;
+	}
+	.topic a{
+		text-decoration: none;
+		color:white;
+	}
+	nav .topic a:first-child
+	{
+		color:#00b894;
+	}
+	main{
+		height: 20vh;
+		width: 100%;
+		display: flex;
+		justify-content:center;
+		align-items: center;
+		top:50px;
+		
+	}
+	.image{
+		width: 50%;
+		background: red;
+
+	}
+	.information{
+		width: 50%;
+		background: blue;
+	}
+	.move{
+		top: 10px;
+		left: 10px;
+	}
+	.text:after {
+		content: '';
+		animation: changetext 10s infinite linear;
+		color:#38e3d1;
+		text-transform: uppercase;
+		align-items: top;
+		top:10px;
+		left:10px;
+	}
+	@keyframes changetext {
+		0%{content: "Physics"}
+	    25%{content: "Chemistry"}
+		50%{content: "Algebra"}
+		75%{content: "Geometry"}
+		100%{content: "English"}
+	}
+	h1{
+		color:white;
+	}
+	section{
+		height:70vh;
+		width: 100%;
+	}
+	
+	
+	.container{
+		width:100%;
+		padding:9%;
+		display: flex;
+		margin: 10px auto;
+		flex-direction: row;
+		justify-content: center;
+	}
+	.box{
+		width: 200px;
+		margin:0 10px;
+		box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.1);
+	}
+	.box img{
+		display: block;
+		width: 100%;
+		border-radius: 5px;
+
+	}
+	.box:hover{
+		transition: 0.5s;
+		transform:scale(1.3);
+		z-index:2s;
+	}
+
+</style> 
+<body>
+<header>
+<script>
+  AOS.init();
+</script>
+
+<nav>
+<div class="rain">
+</div>
+	
+	<div class="heart" ><h1>learnwithfun</h1></div>
+	<div class="topic">
+	<a href="#">
+		home</a>
+		<a href="#">
+		about us</a>
+		<a href="#">
+		 contact</a>
+		<a href="#">
+		help</a>
+
+</div>
+
+</nav>
+<main><div class="move">
+	<h1>WE will teach You <span class="text"></span><br> </h1>
+		</div>
+	</main>
+
+<section>
+	<div class="contain"></div>
+
+	
+	<div class="container">
+		<div class="box">
+			<a href="https://www.shaalaa.com/textbook-solutions/balbharati-solutions-physics-12th-standard-hsc-maharashtra-state-board_194" target="_blank">
+			<img src="physics.jpg" height="200px" width="200px"></a></div>
+			
+			<div class="box">
+				<a href="https://www.shaalaa.com/textbook-solutions/balbharati-solutions-chemistry-12th-standard-hsc-for-maharashtra-state-board_239" target="_blank">
+			<img src="chemistry.jpg" height="200px" width="200px"></a></div>
+			
+			<div class="box">
+				<a href="https://www.shaalaa.com/textbook-solutions/balbharati-solutions-mathematics-and-statistics-1-arts-and-science-12th-standard-hsc-maharashtra-state-board_196" target="_blank">
+			<img src="algebra.jpg" height="200px" width="200px"></div>
+			
+			<div class="box">
+				<a href="https://www.shaalaa.com/textbook-solutions/balbharati-solutions-mathematics-and-statistics-2-arts-and-science-12th-standard-hsc-maharashtra-state-board_198" target="_blank">
+			<img src="geometry.jpg" height="200px" width="200px"></div>
+			
+			<div class="box">
+				<a href="https://www.shaalaa.com/textbook-solutions/balbharati-solutions-english-yuvakbharati-12th-standard-hsc-maharashtra-state-board_201" target="_blank">
+			<img src="english.jpg" height="200px" width="200px">
+		</div>
+	</div>
+
+	
+</div>
+
+</section>
+
+</header>
+</body>
+</html>
